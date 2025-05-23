@@ -13,7 +13,7 @@
 
 ## 📊 模型性能
 
-### 最終評估指標
+### 第一次Fine-tune－最終評估指標
 | 指標 | 數值 |
 |-----|------|
 | 準確率 (Accuracy) | **99.43%** |
@@ -83,7 +83,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 tokenizer = AutoTokenizer.from_pretrained("hfl/chinese-bert-wwm-ext")
 
 # 載入fine-tuned模型
-model = AutoModelForSequenceClassification.from_pretrained("./path/to/your/model")
+model = AutoModelForSequenceClassification.from_pretrained("./path/to/your/model.pt")
 
 # 推理範例
 def predict(text):
