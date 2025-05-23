@@ -115,6 +115,15 @@ RoBERTa_Selfdesigne_Model/
 
 ---
 
+## 📄 授權條款
+
+請遵循相關模型的授權條款：
+- RoBERTa: MIT License
+- Chinese BERT WWM: Apache 2.0 License
+
+---
+
 ## 📜 License
 
 本專案採用 MIT 授權條款，詳見 `LICENSE` 檔案。
+
