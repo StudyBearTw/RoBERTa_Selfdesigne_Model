@@ -118,7 +118,3 @@ RoBERTa_Selfdesigne_Model/
 ## 📜 License
 
 本專案採用 MIT 授權條款，詳見 `LICENSE` 檔案。
-
-```
-
----
