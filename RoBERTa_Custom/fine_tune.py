@@ -140,7 +140,7 @@ def main():
         dropout=0.1
     ).to(device)
 
-    # 載入預訓練權重（如有需要）
+    # 載入預訓練權重
     pretrained_path = r"C:\Users\user\Desktop\RoBERTa_Model_Selfdesign\output\final_model\model.pt"
     if os.path.exists(pretrained_path):
         print("載入預訓練權重...")
