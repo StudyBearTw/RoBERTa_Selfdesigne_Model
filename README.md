@@ -10,7 +10,7 @@
 
 - **任務類型**：中文新聞二分類（真 / 假）
 - **模型架構**：模仿 RoBERTa 設計，並由零開始實作（不依賴 Hugging Face 等現成模型）
-- **Tokenizer**：使用清華大學中文 BERT Tokenizer（`bert-base-chinese`）
+- **Tokenizer**：使用哈爾濱工業大學的hfl/chinese-bert-wwm-ext Tokenizer
 - **輸入格式**：新聞標題與內文組合為單一輸入
 - **訓練資料**：真實世界的中文新聞資料集（詳見 `data/`）
 
