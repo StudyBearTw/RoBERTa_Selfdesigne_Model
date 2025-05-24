@@ -56,6 +56,3 @@
 - **Tokenizer**: chinese-roberta-wwm-ext
 - **測試資料量**: 18,800 筆（假新聞：8797、真新聞：10003）
 
----
-
-> 📌 若需進一步查閱模型訓練細節、原始碼或重現流程，請參閱 [train/README.md](train/README.md) 或相關檔案。
