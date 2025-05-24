@@ -23,9 +23,9 @@
 - `embeddings/`: 實作 RoBERTa 嵌入層（token、position、segment embedding）
 - `encoder/`: 多層 Transformer 編碼器，每層具備自注意力與前饋神經網路
 - `model/`: 結合嵌入層與編碼器的主模型類別
-- `train.py`: 模型訓練主程式
-- `evaluate.py`: 測試與驗證模組效能
-- `utils/`: 包含 tokenizer 處理、資料讀取、訓練流程等工具函式
+- `pretrain.py`: 模型預訓練主程式
+- `fine_tune.py`: 模型微調訓練主程式
+- `test_model.py`: 測試與驗證模組效能
 
 ---
 
@@ -61,22 +61,26 @@ data/
 ```
 
 ### 3. 模型訓練
-
+#### pre-train
 ```bash
-python train.py
+python train_mlm.py
+```
+#### fine-tune
+```bash
+python run_fine_tune.py
 ```
 
 ### 4. 模型評估
 
 ```bash
-python evaluate.py
+python test_model.py
 ```
 
 ---
 
 ## 📈 成效與評估
 
-* 評估指標：Accuracy, F1-score
+* 評估指標：Accuracy（準確率）, Precision（精確率）, Recall（召回率）, F1 score（F1 分數）, Confusion matrix（混淆矩陣）
 * 測試結果顯示本模型在驗證集上有良好的分類能力（詳見 `results/`）
 
 ---
@@ -84,16 +88,42 @@ python evaluate.py
 ## 📁 專案架構
 
 ```
-RoBERTa_Selfdesigne_Model/
-├── embeddings/
-├── encoder/
-├── model/
-├── data/
-├── utils/
-├── train.py
-├── evaluate.py
-├── requirements.txt
-└── README.md
+
+ROBERTA\_SELFDESIGNE\_MODEL/
+├── Dataset/
+│   └── README.md
+│
+├── Fine\_Tune\_model/
+│   ├── Fine-Tune\_result.md
+│   └── README.md
+│
+├── output/
+│   ├── Pre-Train\_result.md
+│   └── README.md
+│
+├── RoBERTa\_Custom/
+│   ├── **pycache**/
+│   ├── **init**.py
+│   ├── attention.py
+│   ├── embeddings.py
+│   ├── encoder.py
+│   ├── fine\_tune.py
+│   ├── mlm\_loss.py
+│   ├── model.py
+│   ├── pretrain.py
+│   └── README.md
+│
+├── .gitattributes
+├── checkDoc.py
+├── combine\_dataset.py
+├── Dataset\_Check.py
+├── dataset\_file\_to\_csv.py
+├── LICENSE
+├── README.md
+├── run\_fine\_tune.py
+├── test\_model.py
+├── test.py
+└── train\_mlm.py
 ```
 
 ---
