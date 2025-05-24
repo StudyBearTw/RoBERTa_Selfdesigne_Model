@@ -120,6 +120,7 @@ ROBERTA\_SELFDESIGNE\_MODEL/
 ├── dataset\_file\_to\_csv.py
 ├── LICENSE
 ├── README.md
+├── requirements.txt
 ├── run\_fine\_tune.py
 ├── test\_model.py
 ├── test.py
